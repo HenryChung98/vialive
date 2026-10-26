@@ -10,9 +10,17 @@ export default defineConfig({
 			title: 'vialive',
 			description: 'Apps I build — privacy policies and support.',
 			social: [{ icon: 'email', label: 'Email', href: 'mailto:henrychung.dev@gmail.com' }],
+			// English pages live at the root (/currency-converter/), Korean ones under /ko/.
+			locales: {
+				root: { label: 'English', lang: 'en' },
+				ko: { label: '한국어', lang: 'ko' },
+			},
 			sidebar: [
 				// One group per app: every page in src/content/docs/<app-slug>/ is listed automatically.
-				{ label: 'ExRate', items: [{ autogenerate: { directory: 'ex-rate' } }] },
+				{
+					label: 'Vialive Currency Converter',
+					items: [{ autogenerate: { directory: 'currency-converter' } }],
+				},
 			],
 		}),
 	],

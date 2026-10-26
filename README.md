@@ -6,9 +6,10 @@ Built with [Astro Starlight](https://starlight.astro.build).
 | URL | Source file |
 | --- | --- |
 | `/` | `src/content/docs/index.mdx` (home, lists every app) |
-| `/ex-rate/` | `src/content/docs/ex-rate/index.mdx` |
-| `/ex-rate/policy/` | `src/content/docs/ex-rate/policy.md` |
-| `/ex-rate/support/` | `src/content/docs/ex-rate/support.md` |
+| `/currency-converter/` | `src/content/docs/currency-converter/index.mdx` |
+| `/currency-converter/policy/` | `src/content/docs/currency-converter/policy.md` |
+| `/currency-converter/support/` | `src/content/docs/currency-converter/support.md` |
+| `/ko/...` | `src/content/docs/ko/...` — Korean translation of every page above |
 | `/app-ads.txt` | `public/app-ads.txt` — AdMob verification, do not move or rename |
 | — | `public/CNAME` — custom domain, keep in sync with `site` in `astro.config.mjs` |
 
@@ -37,6 +38,14 @@ The folder layout under `src/content/docs/` *is* the URL structure.
    ```
 
 3. Add a `LinkCard` for the app to the home page, `src/content/docs/index.mdx`.
+
+4. Add the Korean versions at the same paths under `src/content/docs/ko/`, with links
+   pointing to `/ko/...`. A page without a Korean version falls back to the English one.
+
+## Languages
+
+English is the default and lives at the root; Korean lives under `/ko/`. Locales are set in
+`locales` in `astro.config.mjs`, and Starlight adds the language picker to the header.
 
 ## Commands
 
