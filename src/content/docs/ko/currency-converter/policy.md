@@ -1,6 +1,6 @@
 ---
-title: Vialive Currency Converter 개인정보 처리방침
-description: Vialive Currency Converter와 제3자 서비스가 수집하는 데이터와 그 이용 방식을 설명합니다.
+title: 환율계산기 개인정보 처리방침
+description: 환율계산기와 제3자 서비스가 수집하는 데이터와 그 이용 방식을 설명합니다.
 sidebar:
   label: 개인정보 처리방침
   order: 1
@@ -9,7 +9,7 @@ lastUpdated: 2026-10-26
 
 **시행일:** 2026-10-26
 
-Vialive Currency Converter(이하 "앱")는 iOS용 환율 계산 앱입니다. 이 페이지는 앱과 앱이 사용하는 제3자 서비스가 어떤 데이터를 수집하고 어떻게 이용하는지 설명합니다.
+이 페이지는 환율계산기(이하 "앱")와 앱이 사용하는 제3자 서비스가 어떤 데이터를 수집하고 어떻게 이용하는지 설명합니다.
 
 ## 직접 수집하는 데이터
 

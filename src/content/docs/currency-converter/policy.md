@@ -1,6 +1,6 @@
 ---
-title: Vialive Currency Converter Privacy Policy
-description: What data Vialive Currency Converter and its third-party services collect, and how it is used.
+title: Currency Converter Privacy Policy
+description: What data Currency Converter and its third-party services collect, and how it is used.
 sidebar:
   label: Privacy Policy
   order: 1
@@ -9,7 +9,7 @@ lastUpdated: 2026-10-26
 
 **Effective date:** 2026-10-26
 
-Vialive Currency Converter ("the App", "we", "us") is a currency conversion app for iOS. This page explains what data the App and its third-party services collect and how it's used.
+This page explains what data Currency Converter ("the App", "we", "us") and its third-party services collect and how it's used.
 
 ## Data we collect directly
 

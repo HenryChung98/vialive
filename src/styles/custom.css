@@ -1,0 +1,38 @@
+/* Theme colors from the app icon: navy background, blue ring (#2474ff → #4ebbff). */
+:root:not([data-theme='light']) {
+	--sl-color-accent-low: #12305e;
+	--sl-color-accent: #2474ff;
+	--sl-color-accent-high: #a8dbff;
+	--sl-color-gray-5: #282e3a;
+	--sl-color-gray-6: #1d2130;
+	--sl-color-black: #161824;
+}
+:root[data-theme='light'] {
+	--sl-color-accent-low: #d3e6ff;
+	--sl-color-accent: #166bf9;
+	--sl-color-accent-high: #0b3f9e;
+}
+
+/* Header logo: the VL mark has no padding, so Starlight's default 32px looks oversized next to the title. */
+.site-title img {
+	height: 1.5rem;
+	width: auto;
+}
+
+/* Right sidebar: rounded card around the table of contents instead of a full-height divider line. */
+@media (min-width: 72rem) {
+	.right-sidebar {
+		border-inline-start: none;
+	}
+	.right-sidebar-panel starlight-toc {
+		display: block;
+		padding: 1rem;
+		border-radius: 0.75rem;
+		background-color: var(--sl-color-gray-6);
+	}
+}
+
+/* Hero without an image: drop the empty right column Starlight reserves for it, so the action buttons fit on one row. */
+.hero:not(:has(> img, > .hero-html)) {
+	grid-template-columns: 100%;
+}
