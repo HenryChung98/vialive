@@ -1,49 +1,60 @@
-# Starlight Starter Kit: Basics
+# vialive
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Privacy policies and support pages for my apps, served at <https://vialive.app>.
+Built with [Astro Starlight](https://starlight.astro.build).
 
-```
-pnpm create astro@latest -- --template starlight
-```
+| URL | Source file |
+| --- | --- |
+| `/` | `src/content/docs/index.mdx` (home, lists every app) |
+| `/ex-rate/` | `src/content/docs/ex-rate/index.mdx` |
+| `/ex-rate/policy/` | `src/content/docs/ex-rate/policy.md` |
+| `/ex-rate/support/` | `src/content/docs/ex-rate/support.md` |
+| `/app-ads.txt` | `public/app-ads.txt` — AdMob verification, do not move or rename |
+| — | `public/CNAME` — custom domain, keep in sync with `site` in `astro.config.mjs` |
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The folder layout under `src/content/docs/` *is* the URL structure.
 
-## 🚀 Project Structure
+## Adding a new app
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+1. Create `src/content/docs/<app-slug>/index.mdx` (the app's overview page) and its pages,
+   e.g. `policy.md` and `support.md`:
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+   ```yaml
+   ---
+   title: My App Privacy Policy   # the <h1> and browser tab title
+   description: One line for search engines and link previews.
+   sidebar:
+     label: Privacy Policy        # the link text in the sidebar
+     order: 1                     # link order in the sidebar
+   lastUpdated: 2026-09-22        # shows "Last updated" at the bottom of the page
+   ---
+   ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+2. Add a sidebar group in `astro.config.mjs`:
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+   ```js
+   { label: 'My App', items: [{ autogenerate: { directory: '<app-slug>' } }] },
+   ```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+3. Add a `LinkCard` for the app to the home page, `src/content/docs/index.mdx`.
 
-## 🧞 Commands
+## Commands
 
-All commands are run from the root of the project, from a terminal:
+| Command | Action |
+| :-- | :-- |
+| `pnpm install` | Install dependencies |
+| `pnpm dev` | Start the dev server at `localhost:4321` |
+| `pnpm build` | Build the site to `./dist/` |
+| `pnpm preview` | Preview the build locally |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
+`.github/workflows/deploy.yml` builds and deploys to GitHub Pages on every push to `main`.
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+One-time setup:
+
+1. Repository **Settings → Pages → Source**: *GitHub Actions*.
+2. **Settings → Pages → Custom domain**: `vialive.app`, then turn on *Enforce HTTPS* once the certificate is issued.
+3. At the domain registrar, point the apex domain at GitHub Pages:
+   `A` records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   (and optionally `AAAA` records `2606:50c0:8000::153` … `2606:50c0:8003::153`).
