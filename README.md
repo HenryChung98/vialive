@@ -11,7 +11,7 @@ Built with [Astro](https://astro.build) and [shadcn/ui](https://ui.shadcn.com).
 | `/ko/...` | Korean version of every page above; docs live in `src/content/docs/ko/` |
 | `/app-ads.txt` | `public/app-ads.txt` — AdMob verification, do not move or rename |
 | — | `public/CNAME` — custom domain, keep in sync with `site` in `astro.config.mjs` |
-| — | `appstore/<app>/` — App Store Connect text (`listing.md`), in-app purchase setup (`in-app-purchases.md`) and screenshots; outside `src/` and `public/`, so not published |
+| — | `appstore/<app>/` — App Store Connect text (`listing.md`) and in-app purchase setup (`in-app-purchases.md`); outside `src/` and `public/`, so not published. Screenshots stay in vialive-apps |
 
 App names, descriptions, App Store links and UI text live in `src/i18n/ui.ts`.
 
