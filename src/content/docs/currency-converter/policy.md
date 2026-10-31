@@ -1,10 +1,8 @@
 ---
 title: Currency Converter Privacy Policy
 description: What data Currency Converter and its third-party services collect, and how it is used.
-sidebar:
-  label: Privacy Policy
-  order: 1
-lastUpdated: 2026-10-26
+order: 2
+label: Privacy Policy
 ---
 
 **Effective date:** 2026-10-26

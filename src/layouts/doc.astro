@@ -1,0 +1,38 @@
+---
+import Layout from "@/layouts/main.astro"
+import Sidebar from "@/components/sidebar.astro"
+import Toc from "@/components/toc.astro"
+import { MobileNav } from "@/components/mobile-nav"
+import { Search } from "@/components/search"
+import { ui, type Locale } from "@/i18n/ui"
+import type { MarkdownHeading } from "astro"
+
+interface Props {
+  title: string
+  description: string
+  headings: MarkdownHeading[]
+}
+
+const { title, description, headings } = Astro.props
+const t = ui[Astro.currentLocale as Locale]
+---
+
+<!-- Doc pages (every md file) get search, the app sidebar, and an on-this-page card; app overview pages use main.astro alone. -->
+<Layout title={title} description={description} wide>
+  <Search slot="header" client:idle label={t.search} empty={t.searchEmpty} />
+  <div slot="header" class="lg:hidden">
+    <MobileNav client:load title={t.menu}><Sidebar /></MobileNav>
+  </div>
+
+  <div class="grid gap-10 lg:grid-cols-[13rem_minmax(0,1fr)] xl:grid-cols-[13rem_minmax(0,1fr)_14rem]">
+    <aside class="hidden lg:block">
+      <div class="sticky top-20"><Sidebar /></div>
+    </aside>
+    <article data-pagefind-body class="prose prose-neutral max-w-none dark:prose-invert prose-headings:scroll-mt-20">
+      <slot />
+    </article>
+    <aside class="hidden xl:block">
+      <div class="sticky top-20"><Toc headings={headings} /></div>
+    </aside>
+  </div>
+</Layout>

@@ -1,0 +1,16 @@
+---
+import { appIcons } from "@/lib/app-icons"
+import { Image } from "astro:assets"
+
+interface Props {
+  slug: string
+  size: number
+}
+
+const { slug, size } = Astro.props
+---
+
+<!-- The span draws a 1px squircle outline so dark icons don't melt into dark surfaces. quality="max" because the default compresses small icons until they look soft. -->
+<span class="app-icon block shrink-0 bg-border p-px dark:bg-white/20">
+  <Image src={appIcons[slug]} alt="" width={size} height={size} densities={[1, 2, 3]} quality="max" class="app-icon" />
+</span>

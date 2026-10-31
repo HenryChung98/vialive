@@ -1,0 +1,29 @@
+---
+import { buttonVariants } from "@/components/ui/button"
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { cn } from "@/lib/utils"
+import { contactEmail, ui, type Locale } from "@/i18n/ui"
+import { Mail } from "lucide-react"
+
+interface Props {
+  appName: string
+}
+
+const t = ui[Astro.currentLocale as Locale]
+const subject = encodeURIComponent(`${Astro.props.appName} ${t.support}`)
+const body = encodeURIComponent(t.emailBody)
+---
+
+<Card className="not-prose my-8">
+  <CardHeader>
+    <CardTitle>{t.contactTitle}</CardTitle>
+    <CardDescription>{t.contactDescription}</CardDescription>
+  </CardHeader>
+  <CardFooter className="flex-wrap gap-x-4 gap-y-2">
+    <a href={`mailto:${contactEmail}?subject=${subject}&body=${body}`} class={cn(buttonVariants())}>
+      <Mail data-icon="inline-start" />
+      {t.emailUs}
+    </a>
+    <span class="text-sm break-all text-muted-foreground select-all">{contactEmail}</span>
+  </CardFooter>
+</Card>

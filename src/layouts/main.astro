@@ -1,0 +1,100 @@
+---
+import "@/styles/global.css"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { locales, ui, type Locale } from "@/i18n/ui"
+import { Image } from "astro:assets"
+import { getAbsoluteLocaleUrl, getRelativeLocaleUrl } from "astro:i18n"
+import { Languages } from "lucide-react"
+import logo from "@/assets/vialive-logo.png"
+
+interface Props {
+  title?: string
+  description?: string
+  // Doc pages need room for the sidebar and on-this-page columns.
+  wide?: boolean
+  // False for a page with no URL of its own in each locale (404): no canonical, hreflang or language toggle.
+  localized?: boolean
+}
+
+const siteName = "Vialive"
+const ogLocales = { en: "en_US", ko: "ko_KR" }
+
+const locale = (Astro.currentLocale ?? "en") as Locale
+const t = ui[locale]
+const { title, description = t.tagline, wide = false, localized = true } = Astro.props
+const width = wide ? "max-w-7xl" : "max-w-3xl"
+const fullTitle = title && title !== siteName ? `${title} | ${siteName}` : siteName
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href
+const path = Astro.url.pathname.replace(/^\/ko(?=\/)/, "").replace(/^\//, "")
+// ponytail: a single toggle while there are two locales; use a shadcn DropdownMenu at three.
+const otherLocale = locales.find((l) => l !== locale)!
+const image = new URL("/og.png", Astro.site).href
+---
+
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {
+      localized && (
+        <>
+          <link rel="canonical" href={canonical} />
+          {locales.map((l) => (
+            <link rel="alternate" hreflang={l} href={getAbsoluteLocaleUrl(l, path)} />
+          ))}
+          <link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl("en", path)} />
+        </>
+      )
+    }
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content={ogLocales[locale]} />
+    {locales.filter((l) => l !== locale).map((l) => <meta property="og:locale:alternate" content={ogLocales[l]} />)}
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="flex min-h-svh flex-col">
+    <header class="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
+      <div class:list={["mx-auto flex h-14 items-center gap-2 px-4", width]}>
+        <a href={getRelativeLocaleUrl(locale, "")} class="mr-auto flex items-center gap-2 font-medium">
+          {/* The logo has white strokes, so it needs a dark tile on the light theme. */}
+          <span class="flex size-8 items-center justify-center rounded-lg bg-[#161824]">
+            <Image src={logo} alt="" width={24} densities={[2, 3]} />
+          </span>
+          {siteName}
+        </a>
+        <slot name="header" />
+        {
+          localized && (
+            <a
+              href={getRelativeLocaleUrl(otherLocale, path)}
+              hreflang={otherLocale}
+              lang={otherLocale}
+              class={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
+            >
+              <Languages />
+              {t.otherLocale}
+            </a>
+          )
+        }
+      </div>
+    </header>
+    <main class:list={["mx-auto w-full flex-1 px-4 py-12", width]}>
+      <slot />
+    </main>
+    <footer class="border-t">
+      <p class:list={["mx-auto px-4 py-6 text-xs text-muted-foreground", width]}>{t.legal}</p>
+    </footer>
+  </body>
+</html>

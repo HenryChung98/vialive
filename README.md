@@ -1,51 +1,41 @@
 # vialive
 
 Privacy policies and support pages for my apps, served at <https://vialive.app>.
-Built with [Astro Starlight](https://starlight.astro.build).
+Built with [Astro](https://astro.build) and [shadcn/ui](https://ui.shadcn.com).
 
-| URL | Source file |
+| URL | Source |
 | --- | --- |
-| `/` | `src/content/docs/index.mdx` (home, lists every app) |
-| `/currency-converter/` | `src/content/docs/currency-converter/index.mdx` |
-| `/currency-converter/policy/` | `src/content/docs/currency-converter/policy.md` |
-| `/currency-converter/support/` | `src/content/docs/currency-converter/support.md` |
-| `/ko/...` | `src/content/docs/ko/...` — Korean translation of every page above |
+| `/` | `src/pages/[...locale]/index.astro` — home, one card per app |
+| `/<app>/` | `src/pages/[...locale]/[app]/index.astro` — App Store, policy and support buttons |
+| `/<app>/policy/`, `/<app>/support/` | `src/content/docs/<app>/*.md`, rendered with `src/layouts/doc.astro` (search, sidebar, on-this-page card) |
+| `/ko/...` | Korean version of every page above; docs live in `src/content/docs/ko/` |
 | `/app-ads.txt` | `public/app-ads.txt` — AdMob verification, do not move or rename |
 | — | `public/CNAME` — custom domain, keep in sync with `site` in `astro.config.mjs` |
 
-The folder layout under `src/content/docs/` *is* the URL structure.
+App names, descriptions, App Store links and UI text live in `src/i18n/ui.ts`.
 
 ## Adding a new app
 
-1. Create `src/content/docs/<app-slug>/index.mdx` (the app's overview page) and its pages,
-   e.g. `policy.md` and `support.md`:
+1. Add the app to `apps` for both locales in `src/i18n/ui.ts`, and put its App Store icon at `src/assets/apps/<app>-icon.png` (or `.webp`): the square 1024px original, not pre-rounded. Its home card and overview page appear automatically, with the icon clipped to the App Store shape.
+2. Add its docs, e.g. `src/content/docs/<app>/policy.md` and `support.md`, and the Korean versions under `src/content/docs/ko/<app>/`:
 
    ```yaml
    ---
    title: My App Privacy Policy   # the <h1> and browser tab title
    description: One line for search engines and link previews.
-   sidebar:
-     label: Privacy Policy        # the link text in the sidebar
-     order: 1                     # link order in the sidebar
-   lastUpdated: 2026-09-22        # shows "Last updated" at the bottom of the page
+   order: 2                       # position in the sidebar (support is 1, policy is 2)
+   label: Privacy Policy          # sidebar link text (defaults to title)
    ---
    ```
 
-2. Add a sidebar group in `astro.config.mjs`:
+The sidebar, search index, sitemap and hreflang links pick up new pages on their own.
 
-   ```js
-   { label: 'My App', items: [{ autogenerate: { directory: '<app-slug>' } }] },
-   ```
-
-3. Add a `LinkCard` for the app to the home page, `src/content/docs/index.mdx`.
-
-4. Add the Korean versions at the same paths under `src/content/docs/ko/`, with links
-   pointing to `/ko/...`. A page without a Korean version falls back to the English one.
+`support.md` is special: it gets a contact card on top, and each `### question` becomes an accordion item. Keep the questions as the last section of the page.
 
 ## Languages
 
 English is the default and lives at the root; Korean lives under `/ko/`. Locales are set in
-`locales` in `astro.config.mjs`, and Starlight adds the language picker to the header.
+`i18n` in `astro.config.mjs` and in `src/i18n/ui.ts`.
 
 ## Commands
 
@@ -53,8 +43,8 @@ English is the default and lives at the root; Korean lives under `/ko/`. Locales
 | :-- | :-- |
 | `pnpm install` | Install dependencies |
 | `pnpm dev` | Start the dev server at `localhost:4321` |
-| `pnpm build` | Build the site to `./dist/` |
-| `pnpm preview` | Preview the build locally |
+| `pnpm build` | Build the site to `./dist/` and index it for search with Pagefind |
+| `pnpm preview` | Preview the build locally (search only works here, not in `pnpm dev`) |
 
 ## Deployment
 

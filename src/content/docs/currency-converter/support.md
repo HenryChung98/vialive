@@ -1,17 +1,9 @@
 ---
 title: Currency Converter Support
 description: Contact details and answers to common questions about Currency Converter.
-sidebar:
-  label: Support
-  order: 2
-lastUpdated: 2026-10-27
+order: 1
+label: Support
 ---
-
-## Contact
-
-Email: **[henrychung.dev@gmail.com](mailto:henrychung.dev@gmail.com)**
-
-To help us look into a problem, please include your iPhone model, your iOS version, and a short description of what happened.
 
 ## Frequently asked questions
 

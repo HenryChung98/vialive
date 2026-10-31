@@ -1,0 +1,28 @@
+---
+import type { MarkdownHeading } from "astro"
+import { Card, CardContent } from "@/components/ui/card"
+
+interface Props {
+  headings: MarkdownHeading[]
+}
+
+const headings = Astro.props.headings.filter((h) => h.depth === 2 || h.depth === 3)
+---
+
+{
+  headings.length > 0 && (
+    <Card size="sm">
+      <CardContent>
+        <ul class="space-y-1.5">
+          {headings.map((h) => (
+            <li class:list={[h.depth === 3 && "pl-3"]}>
+              <a href={`#${h.slug}`} class="text-muted-foreground transition-colors hover:text-foreground">
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  )
+}

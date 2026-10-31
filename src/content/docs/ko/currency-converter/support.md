@@ -1,17 +1,9 @@
 ---
 title: 환율계산기 지원
 description: 환율계산기 문의 방법과 자주 묻는 질문입니다.
-sidebar:
-  label: 지원
-  order: 2
-lastUpdated: 2026-10-27
+order: 1
+label: 지원
 ---
-
-## 문의
-
-이메일: **[henrychung.dev@gmail.com](mailto:henrychung.dev@gmail.com)**
-
-문제를 확인할 수 있도록 iPhone 모델, iOS 버전, 어떤 일이 있었는지 간단한 설명을 함께 보내 주세요.
 
 ## 자주 묻는 질문
 
@@ -25,7 +17,7 @@ lastUpdated: 2026-10-27
 
 ### 잠금 화면 카드가 8시간 후에 꺼지는 이유는 무엇이고, 어떻게 다시 켜나요?
 
-잠금 화면 카드는 실시간 현황(Live Activity)입니다. iOS는 실시간 현황을 최대 8시간까지만 실행한 뒤 자동으로 종료합니다. 이는 iOS의 제한이며, 앱의 설정이 아닙니다.
+잠금 화면 카드는 Live Activities(실시간 현황) 기능입니다. iOS는 Live Activities를 최대 8시간까지만 실행한 뒤 자동으로 종료합니다. 이는 iOS의 제한이며, 앱의 설정이 아닙니다.
 
 카드가 계속 켜져 있도록 환율계산기는 다음 경우에 카드를 새 카드로 바꿔 8시간 제한을 다시 시작합니다.
 
