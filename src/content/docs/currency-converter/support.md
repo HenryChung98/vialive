@@ -13,7 +13,7 @@ label: Support
 2. Tap **Edit → Add Widget** (or the **+** button) in the top-left corner.
 3. Search for **Currency**, choose the small or medium size, and tap **Add Widget**.
 
-The widget shows your most recent conversion. Tap the swap button to switch the two currencies. The medium widget also lets you adjust the amount and the step size (×1 to ×1,000). To choose different currencies, open the app.
+The widget shows your most recent conversion. Tap the swap button to switch the two currencies. The medium widget also lets you adjust the amount and the step size (×1 to ×1,000). To choose different currencies, open the app. With **Currency Converter Plus**, the widget and the Lock Screen card also show a **Next Currency Pair** button that switches to your next favorite pair.
 
 ### Why does the Lock Screen card turn off after 8 hours, and how do I turn it back on?
 
@@ -29,7 +29,7 @@ So if you use the app or the card regularly, it rarely turns off.
 If the card does turn off, it shows **Turned Off**, the time it will disappear from the Lock Screen, and a ▶ **Turn On** button. To turn it back on:
 
 - Tap **▶ Turn On** on the card, or
-- Open Currency Converter. If you left **Show on Lock Screen** on, the card turns back on automatically.
+- Open Currency Converter. If you left **Enable Live Activity** on, the card turns back on automatically.
 
 If the card doesn't appear at all, make sure Live Activities are allowed in **Settings → Currency → Live Activities**.
 
@@ -52,4 +52,16 @@ Rates are for reference only. Rates used by banks and card companies for actual 
 - **EEA / UK / Switzerland users**: Tap the **Privacy Settings** button (hand icon) at the top of the App's main screen to review or change your ad consent choices. This button appears only in regions where it's required.
 - **Google ad personalization**: You can manage how Google personalizes ads through your Google Account's [Ad Settings](https://adssettings.google.com/).
 
+With **Currency Converter Plus**, the App shows no ads, so it doesn't ask for tracking or ad consent and the **Privacy Settings** button doesn't appear.
+
 For more about the data involved, see the [Currency Converter Privacy Policy](/currency-converter/policy/).
+
+### What does Currency Converter Plus include?
+
+**Currency Converter Plus** is a one-time purchase. To buy it, tap **Settings** (top-left of the main screen) → **Upgrade to Plus**.
+
+- **Favorites**: Tap ☆ to save the current currency pair (up to 30), then tap a saved pair to switch to it. Use **Edit Favorites** to delete or reorder pairs.
+- **Next Currency Pair**: Switch to your next favorite pair from the Lock Screen card and the widget.
+- No ads.
+
+If you reinstall the App or use a new device, tap **Restore Purchases** on the same screen.
