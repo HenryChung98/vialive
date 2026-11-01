@@ -33,6 +33,12 @@ export const ui = {
         description: "Convert currencies right from your iPhone Lock Screen with Live Activities.",
         appStore: "https://apps.apple.com/us/app/currency-converter-vialive/id6814764703",
       },
+      {
+        slug: "workout-timer",
+        name: "Workout Timer",
+        description: "Interval, rest, and AMRAP timers you can control from your iPhone Lock Screen with Live Activities.",
+        appStore: "https://apps.apple.com/us/app/id6829184635",
+      },
     ],
   },
   ko: {
@@ -64,6 +70,12 @@ export const ui = {
         name: "환율계산기",
         description: "Live Activities로 iPhone 잠금 화면에서 바로 환율을 계산하세요.",
         appStore: "https://apps.apple.com/kr/app/id6814764703",
+      },
+      {
+        slug: "workout-timer",
+        name: "운동 타이머",
+        description: "인터벌, 세트 휴식, AMRAP 타이머를 Live Activities로 iPhone 잠금 화면에서 조작하세요.",
+        appStore: "https://apps.apple.com/kr/app/id6829184635",
       },
     ],
   },
