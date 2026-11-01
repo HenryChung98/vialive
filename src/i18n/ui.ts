@@ -13,7 +13,7 @@ export const ui = {
     },
     // Apple requires these credit lines wherever the badge is used.
     legal:
-      "Apple, the Apple logo, iPhone, and Live Activities are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc., registered in the U.S. and other countries. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.",
+      "Apple, the Apple logo, iPhone, Dynamic Island, and Live Activities are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc., registered in the U.S. and other countries. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license.",
     privacy: "Privacy Policy",
     support: "Support",
     privacyHint: "What data is collected and how it's used",
@@ -51,7 +51,7 @@ export const ui = {
       width: 156,
     },
     legal:
-      "Apple, Apple 로고, iPhone 및 Live Activities는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다. App Store는 미국 및 기타 국가에 등록된 Apple Inc.의 서비스 마크입니다. IOS는 미국 및 기타 국가에서 Cisco의 상표 또는 등록 상표이며 라이선스에 따라 사용됩니다.",
+      "Apple, Apple 로고, iPhone, Dynamic Island 및 Live Activities는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다. App Store는 미국 및 기타 국가에 등록된 Apple Inc.의 서비스 마크입니다. IOS는 미국 및 기타 국가에서 Cisco의 상표 또는 등록 상표이며 라이선스에 따라 사용됩니다.",
     privacy: "개인정보 처리방침",
     support: "지원",
     privacyHint: "수집하는 데이터와 이용 방식 안내",
