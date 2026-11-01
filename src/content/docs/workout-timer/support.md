@@ -29,6 +29,8 @@ You can also add it to your Lock Screen: touch and hold the Lock Screen, tap **C
 
 With **Workout Timer Plus**, the timer appears on the Lock Screen and in the Dynamic Island (on supported iPhones) as a Live Activity when you open the app. From the card, you can play or pause the timer and, for AMRAP, add a round. The card shows the remaining time, plus the round and total time left for Interval and the round count for AMRAP.
 
+The card uses an internet connection to switch segments on time. Without a connection, the card may update late, but the timer, sounds, and vibration keep working.
+
 If the card doesn't appear, make sure Live Activities are allowed in **Settings → Workout Timer → Live Activities**.
 
 While you use the buttons on the Lock Screen, iOS may turn off the display after a few seconds. This is an iOS limitation. Thank you for your understanding.

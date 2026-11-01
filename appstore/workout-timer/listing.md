@@ -63,6 +63,7 @@ A one-time purchase:
 
 ABOUT LIVE ACTIVITIES
 • iOS turns Live Activities off after 8 hours. Just open the app to turn it back on
+• The Lock Screen card uses an internet connection to switch segments on time. Without a connection, it may update late, but the timer, sounds, and vibration keep working
 • While you use the buttons on the Lock Screen, iOS may turn off the display after a few seconds. This is an iOS limitation. Thank you for your understanding.
 
 ### ko
@@ -93,6 +94,7 @@ ABOUT LIVE ACTIVITIES
 
 LIVE ACTIVITIES 안내
 • iOS 정책상 8시간이 지나면 꺼지며, 앱을 열면 다시 켜집니다
+• 잠금화면 카드는 구간을 제때 바꾸기 위해 인터넷 연결을 사용합니다. 연결이 없으면 카드 표시가 늦게 바뀔 수 있지만, 타이머와 소리, 진동은 그대로 동작합니다
 • 잠금화면에서 버튼을 조작하는 중에도 iOS 정책상 화면이 몇 초 뒤 꺼질 수 있습니다. 양해 부탁드립니다.
 
 ## What's New in This Version (4000)
