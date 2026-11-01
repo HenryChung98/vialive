@@ -14,10 +14,14 @@ Built with [Astro](https://astro.build) and [shadcn/ui](https://ui.shadcn.com).
 
 App names, descriptions, App Store links and UI text live in `src/i18n/ui.ts`.
 
+**Edit app docs in `vialive-apps`, not here.** Each app's pages and its `apps` entry in `src/i18n/ui.ts` are written in `vialive-apps` (`Apps/<App>/Website/`), checked against the app's code, and copied here by its `/docs-publish` command. Changes made here are overwritten on the next publish.
+
 ## Adding a new app
 
-1. Add the app to `apps` for both locales in `src/i18n/ui.ts`, and put its App Store icon at `src/assets/apps/<app>-icon.png` (or `.webp`): the square 1024px original, not pre-rounded. Its home card and overview page appear automatically, with the icon clipped to the App Store shape.
-2. Add its docs, e.g. `src/content/docs/<app>/policy.md` and `support.md`, and the Korean versions under `src/content/docs/ko/<app>/`:
+In `vialive-apps`, run `/docs-sync <app>` to write the app's pages and entry, then `/docs-publish <app>` to copy them here. The copy:
+
+1. Adds the app to `apps` for both locales in `src/i18n/ui.ts`, and puts its App Store icon at `src/assets/apps/<app>-icon.png`: the square 1024px original, not pre-rounded. Its home card and overview page appear automatically, with the icon clipped to the App Store shape.
+2. Adds its docs, `src/content/docs/<app>/policy.md` and `support.md`, and the Korean versions under `src/content/docs/ko/<app>/`:
 
    ```yaml
    ---

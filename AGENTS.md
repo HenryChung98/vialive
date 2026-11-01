@@ -8,6 +8,10 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+## App docs
+
+Don't edit an app's pages (`src/content/docs/<app>/`, `src/content/docs/ko/<app>/`), its `apps` entry in `src/i18n/ui.ts` or its icon here. They are written in `vialive-apps` (`Apps/<App>/Website/`) and copied here by `/docs-publish`, which would overwrite edits made here. Site-wide parts (layout, components, `tagline`, `legal`, `appStoreBadge`) are edited here as usual.
+
 ## UI requirements
 
 - **Mobile responsive is required.** Most visitors arrive from the iPhone app. Check every changed page at 320px and 375px wide: no horizontal scroll, and nothing hidden on mobile without another way to reach it (the doc sidebar moves into a `Sheet` menu).
