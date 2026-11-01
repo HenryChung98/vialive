@@ -42,7 +42,7 @@ For details on how Google collects and uses this data, see:
 ## Your choices
 
 - **iOS App Tracking Transparency**: You can allow or deny tracking when prompted, or change your choice anytime in **Settings → Privacy & Security → Tracking**.
-- **EEA / UK / Switzerland users**: On first launch, you can review and change your ad consent choices through the consent form shown in the App, and revisit them anytime with the Privacy Settings button at the top right of the App's main screen.
+- **EEA / UK / Switzerland users**: On first launch, you can review and change your ad consent choices through the consent form shown in the App, and revisit them anytime with the **Privacy Settings** button at the top right of the App's main screen.
 - **Google ad personalization**: You can manage how Google personalizes ads through your Google Account's [Ad Settings](https://adssettings.google.com/).
 
 ## Children's privacy

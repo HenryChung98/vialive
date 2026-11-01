@@ -55,7 +55,7 @@ For more about the data involved, see the [Workout Timer Privacy Policy](/workou
 
 **Workout Timer Plus** is a one-time purchase. To buy it, tap **Settings** (top-left of the main screen) → **Upgrade to Plus**.
 
-- **Save multiple timers in a list**: Without Plus, each timer type has one timer. With Plus, tap **+** to save as many as you need for each type, tap one to open it, and swipe left to delete it.
+- **Save multiple timers in a list**: Without Plus, each timer type has one timer. With Plus, tap **+** to save up to 30 for each type, tap one to open it, and swipe left to delete it.
 - **Control timers from the Lock Screen**: Play, pause, and add rounds from the Lock Screen and the Dynamic Island.
 - **Vibration and sound volume settings**: In **Settings**, turn on **Vibration** when each segment starts or ends, and adjust the **Sound Volume**. Sound volume also follows the device volume.
 - No ads.
