@@ -5,13 +5,13 @@ order: 2
 label: Privacy Policy
 ---
 
-**Effective date:** 2026-10-31
+**Effective date:** 2026-11-02
 
 This page explains what data Currency Converter ("the App", "we", "us") and its third-party services collect and how it's used.
 
 ## Data we collect directly
 
-The App itself does not require an account, sign-in, or personal information. Currency amounts, unit settings, favorite currency pairs, and display settings (decimal places, theme) are stored only on your device, in storage shared with the App's widget, to show your last-used values on the Home Screen widget and Lock Screen.
+The App itself does not require an account, sign-in, or personal information. Currency amounts, unit settings, favorite currency pairs, and display settings (decimal places, theme) are stored only on your device, in storage shared with the App's widget, to show your last-used values on the Home Screen widget and the Live Activity.
 
 To display exchange rates, the App sends the currency codes you select to a third-party rates API ([Frankfurter](https://frankfurter.dev)). No personal or device-identifying information is included in these requests.
 
