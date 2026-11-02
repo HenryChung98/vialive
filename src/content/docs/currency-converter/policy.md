@@ -11,7 +11,7 @@ This page explains what data Currency Converter ("the App", "we", "us") and its 
 
 ## Data we collect directly
 
-The App itself does not require an account, sign-in, or personal information. Currency amounts, unit settings, favorite currency pairs, and display settings (decimal places, theme) are stored only on your device, in storage shared with the App's widget, to show your last-used values on the Home Screen widget and the Live Activity.
+The App itself does not require an account, sign-in, or personal information. Currency amounts, unit settings, favorite currency pairs, and display settings (decimal places, theme) are stored only on your device, in storage shared with the App's widget, to show your last-used values on the Home Screen widget and the Live Activity. If you use the Apple Watch app, these values and the last downloaded exchange rates are also sent directly between your iPhone and your paired Apple Watch through Apple's Watch Connectivity and stored on the watch. They are not sent to us or to any server.
 
 To display exchange rates, the App sends the currency codes you select to a third-party rates API ([Frankfurter](https://frankfurter.dev)). No personal or device-identifying information is included in these requests.
 

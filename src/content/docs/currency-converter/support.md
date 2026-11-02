@@ -62,6 +62,19 @@ For more about the data involved, see the [Currency Converter Privacy Policy](/c
 
 - **Favorites**: Tap ☆ to save the current currency pair (up to 30), then tap a saved pair to switch to it. Use **Edit Favorites** to delete or reorder pairs.
 - **Next Currency Pair**: Switch to your next favorite pair from the Live Activity and the widget.
+- **Decimal Places**: Choose Auto, 0, 2, or 4 decimal places for converted amounts in **Settings**.
+- **Apple Watch**: Convert on your Apple Watch, even without your iPhone nearby.
 - No ads.
 
 If you reinstall the App or use a new device, tap **Restore Purchases** on the same screen.
+
+### How do I use Currency Converter on Apple Watch?
+
+The Apple Watch app is part of **Currency Converter Plus**. Without Plus, it asks you to upgrade on your iPhone. If Currency Converter isn't on your Apple Watch, open the Watch app on your iPhone and install it from **Available Apps**. Open Currency Converter on your iPhone once so your Apple Watch gets exchange rates.
+
+- Turn the Digital Crown to change the amount by the current step. Tap the step button below the result to switch between ×1, ×10, ×100, and ×1,000.
+- Tap the amount to type it on a keypad.
+- Tap a currency to choose another one, or tap ⇄ to swap them. Your favorite pairs are at the top of the list, and the → button switches to your next favorite pair.
+- The amount, currencies, and step stay in sync between your iPhone and Apple Watch, and the one you changed last is kept. Changes appear on the other device right away while its app is open, or the next time you open it.
+- Your Apple Watch keeps the rates your iPhone last downloaded, so it works without your iPhone nearby. The date below the result shows which day's rates it uses. To get newer rates, open Currency Converter on your iPhone.
+- Favorites and settings are changed in the iPhone app.
