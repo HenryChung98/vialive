@@ -30,7 +30,7 @@ export const ui = {
       {
         slug: "currency-converter",
         name: "Currency Converter",
-        description: "Convert currencies right from your iPhone Lock Screen with Live Activities.",
+        description: "Convert currencies right from Live Activities and the Dynamic Island on iPhone.",
         appStore: "https://apps.apple.com/us/app/currency-converter-vialive/id6814764703",
       },
       {
@@ -68,7 +68,7 @@ export const ui = {
       {
         slug: "currency-converter",
         name: "환율계산기",
-        description: "Live Activities로 iPhone 잠금 화면에서 바로 환율을 계산하세요.",
+        description: "iPhone의 Live Activity와 Dynamic Island에서 바로 환율을 계산하세요.",
         appStore: "https://apps.apple.com/kr/app/id6814764703",
       },
       {
