@@ -58,6 +58,23 @@ For more about the data involved, see the [Workout Timer Privacy Policy](/workou
 - **Save multiple timers in a list**: Without Plus, each timer type has one timer. With Plus, tap **+** to save up to 30 for each type, tap one to open it, and swipe left to delete it.
 - **Control timers with Live Activities**: Play, pause, and add rounds from the Live Activity and the Dynamic Island.
 - **Vibration and sound volume settings**: In **Settings**, turn on **Vibration** when each segment starts or ends, and adjust the **Sound Volume**. Sound volume also follows the device volume.
+- **Apple Watch Support (watchOS 26 or later)**: Run, add, and edit timers on your Apple Watch, even without your iPhone nearby.
 - No ads.
 
 If you reinstall the App or use a new device, tap **Restore Purchases** on the same screen.
+
+### How do I use Workout Timer on Apple Watch?
+
+The Apple Watch app is part of **Workout Timer Plus** and needs watchOS 26 or later. Without Plus, it asks you to upgrade on your iPhone. If Workout Timer isn't on your Apple Watch, open the Watch app on your iPhone and install it from **Available Apps**. Open Workout Timer on your iPhone once so your Apple Watch gets your timers.
+
+- Choose **Interval**, **Rest**, or **AMRAP**, then tap a saved timer to open it. Tap **+** to add a timer, swipe left to delete one, and tap ✏️ on the timer screen to edit it.
+- The timer screen works like the iPhone's: the remaining time, the round and total time left for Interval, and the round count for AMRAP, with a green screen during workouts and blue during the cooldown.
+- Instead of sounds, your Apple Watch taps your wrist every second for the last 5 seconds of each segment, and with a stronger tap when the next segment starts or the workout ends.
+- Your saved timers stay in sync between your iPhone and Apple Watch, so a timer you add, edit, or delete on one appears on the other. Changes appear right away while the other device's app is open, or the next time you open it. If you change timers on both devices while they're not connected, the list you changed last is kept.
+- Each device runs its own timer. A timer you start on your Apple Watch runs on your Apple Watch, so you can work out without your iPhone.
+
+### Why does Workout Timer ask for Health access on Apple Watch?
+
+The first time you play a timer on your Apple Watch, Workout Timer explains why it asks for Health access and then shows Apple's permission screen. While a timer is playing, the App runs it as a workout so it keeps running and tapping your wrist on time after you lower your wrist. Starting a workout requires this permission.
+
+Workout Timer doesn't read or save any health data, and no workouts are added to the Health or Fitness app. If you don't allow it, the timer still works, but it may tap late after you lower your wrist. You can change this anytime on your iPhone in **Settings → Privacy & Security → Health → Workout Timer**.

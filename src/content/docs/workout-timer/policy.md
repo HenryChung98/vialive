@@ -11,7 +11,7 @@ This page explains what data Workout Timer ("the App", "we", "us") and its third
 
 ## Data we collect directly
 
-The App itself does not require an account, sign-in, or personal information. Your timers, the timer type you last selected, and your settings (vibration, sound volume, theme) are stored only on your device, in storage shared with the App's widget and Live Activity.
+The App itself does not require an account, sign-in, or personal information. Your timers, the timer type you last selected, and your settings (vibration, sound volume, theme) are stored only on your device, in storage shared with the App's widget and Live Activity. If you use the Apple Watch app, your saved timers, theme, and whether you have Plus are also sent directly between your iPhone and your paired Apple Watch through Apple's Watch Connectivity and stored on the watch. They are not sent to us or to any server.
 
 If you buy **Workout Timer Plus**, Apple processes the purchase through the App Store, and we don't receive your payment information. The App checks your purchase with Apple and stores whether you have Plus on your device.
 
@@ -23,6 +23,10 @@ With Workout Timer Plus, a running timer is shown as a Live Activity, and also i
 - The times the upcoming segments start, and what the Live Activity shows at each of them (timer type, remaining time, round)
 
 The server sends these updates to the Live Activity through Apple Push Notification service at the scheduled times. They contain no personal or device-identifying information, and the server deletes them after the last update is sent or when you pause or reset the timer. Free users don't use the Live Activity, so nothing is sent.
+
+## Health (Apple Watch)
+
+On Apple Watch, the App asks for permission to write workouts in Apple Health (HealthKit). It uses this only to run a playing timer as a workout, so the timer keeps running and tapping your wrist on time after you lower your wrist. The App doesn't read any health data, doesn't save workouts or any other data to Health, and doesn't send health data anywhere. If you don't allow it, the timer still works.
 
 ## Advertising
 
@@ -44,6 +48,7 @@ For details on how Google collects and uses this data, see:
 - **iOS App Tracking Transparency**: You can allow or deny tracking when prompted, or change your choice anytime in **Settings → Privacy & Security → Tracking**.
 - **EEA / UK / Switzerland users**: On first launch, you can review and change your ad consent choices through the consent form shown in the App, and revisit them anytime with the **Privacy Settings** button at the top right of the App's main screen.
 - **Google ad personalization**: You can manage how Google personalizes ads through your Google Account's [Ad Settings](https://adssettings.google.com/).
+- **Apple Health (Apple Watch)**: You can allow or deny the App's Health access when asked, or change it anytime on your iPhone in **Settings → Privacy & Security → Health → Workout Timer**.
 
 ## Children's privacy
 
