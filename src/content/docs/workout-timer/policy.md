@@ -5,24 +5,24 @@ order: 2
 label: Privacy Policy
 ---
 
-**Effective date:** 2026-11-01
+**Effective date:** 2026-11-02
 
 This page explains what data Workout Timer ("the App", "we", "us") and its third-party services collect and how it's used.
 
 ## Data we collect directly
 
-The App itself does not require an account, sign-in, or personal information. Your timers, the timer type you last selected, and your settings (vibration, sound volume, theme) are stored only on your device, in storage shared with the App's widget and Lock Screen card.
+The App itself does not require an account, sign-in, or personal information. Your timers, the timer type you last selected, and your settings (vibration, sound volume, theme) are stored only on your device, in storage shared with the App's widget and Live Activity.
 
 If you buy **Workout Timer Plus**, Apple processes the purchase through the App Store, and we don't receive your payment information. The App checks your purchase with Apple and stores whether you have Plus on your device.
 
-## Lock Screen card updates
+## Live Activity updates
 
-With Workout Timer Plus, a running timer is shown on the Lock Screen and in the Dynamic Island as a Live Activity. So that the card switches segments on time even while the App is in the background, the App sends our push server the following when you start, pause, or reset a timer:
+With Workout Timer Plus, a running timer is shown as a Live Activity, and also in the Dynamic Island on supported iPhones. So that the Live Activity switches segments on time even while the App is in the background, the App sends our push server the following when you start, pause, or reset a timer:
 
-- The card's Live Activity push token, issued by Apple for that card only
-- The times the upcoming segments start, and what the card shows at each of them (timer type, remaining time, round)
+- The Live Activity's push token, issued by Apple for that Live Activity only
+- The times the upcoming segments start, and what the Live Activity shows at each of them (timer type, remaining time, round)
 
-The server sends these updates to the card through Apple Push Notification service at the scheduled times. They contain no personal or device-identifying information, and the server deletes them after the last update is sent or when you pause or reset the timer. Free users don't use the Lock Screen card, so nothing is sent.
+The server sends these updates to the Live Activity through Apple Push Notification service at the scheduled times. They contain no personal or device-identifying information, and the server deletes them after the last update is sent or when you pause or reset the timer. Free users don't use the Live Activity, so nothing is sent.
 
 ## Advertising
 
@@ -51,7 +51,7 @@ The App is not directed at children under 13, and we do not knowingly collect pe
 
 ## Data retention
 
-We do not operate an account system, so we do not retain your personal data. Scheduled Lock Screen card updates are kept on our push server only until they are sent or cancelled, as described above. Data collected by Google AdMob is retained and processed according to Google's own privacy policy, linked above.
+We do not operate an account system, so we do not retain your personal data. Scheduled Live Activity updates are kept on our push server only until they are sent or cancelled, as described above. Data collected by Google AdMob is retained and processed according to Google's own privacy policy, linked above.
 
 ## Changes to this policy
 

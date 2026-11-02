@@ -36,7 +36,7 @@ export const ui = {
       {
         slug: "workout-timer",
         name: "Workout Timer",
-        description: "Interval, rest, and AMRAP timers you can control from your iPhone Lock Screen with Live Activities.",
+        description: "Interval, rest, and AMRAP timers you can control from Live Activities and the Dynamic Island on iPhone.",
         appStore: "https://apps.apple.com/us/app/id6829184635",
       },
     ],
@@ -74,7 +74,7 @@ export const ui = {
       {
         slug: "workout-timer",
         name: "운동 타이머",
-        description: "인터벌, 세트 휴식, AMRAP 타이머를 Live Activities로 iPhone 잠금 화면에서 조작하세요.",
+        description: "인터벌, 세트 휴식, AMRAP 타이머를 iPhone의 Live Activity와 Dynamic Island에서 조작하세요.",
         appStore: "https://apps.apple.com/kr/app/id6829184635",
       },
     ],

@@ -25,21 +25,21 @@ A beep sounds every second for the last 5 seconds of each segment, and a longer 
 
 You can also add it to your Lock Screen: touch and hold the Lock Screen, tap **Customize → Lock Screen**, then tap the widget area. The widget shows the timer type you last selected; tap it to open the app.
 
-### How do I control the timer from the Lock Screen?
+### How do I control the timer with Live Activities?
 
-With **Workout Timer Plus**, the timer appears on the Lock Screen and in the Dynamic Island (on supported iPhones) as a Live Activity when you open the app. From the card, you can play or pause the timer and, for AMRAP, add a round. The card shows the remaining time, plus the round and total time left for Interval and the round count for AMRAP.
+With **Workout Timer Plus**, the timer appears as a Live Activity when you open the app, and also in the Dynamic Island on supported iPhones. From the Live Activity, you can play or pause the timer and, for AMRAP, add a round. It shows the remaining time, plus the round and total time left for Interval and the round count for AMRAP.
 
-The card uses an internet connection to switch segments on time. Without a connection, the card may update late, but the timer, sounds, and vibration keep working.
+The Live Activity uses an internet connection to switch segments on time. Without a connection, it may update late, but the timer, sounds, and vibration keep working.
 
-If the card doesn't appear, make sure Live Activities are allowed in **Settings → Workout Timer → Live Activities**.
+If the Live Activity doesn't appear, make sure Live Activities are allowed in **Settings → Workout Timer → Live Activities**.
 
-While you use the buttons on the Lock Screen, iOS may turn off the display after a few seconds. This is an iOS limitation. Thank you for your understanding.
+While you use the Live Activity's buttons with your iPhone locked, iOS may turn off the display after a few seconds. This is an iOS limitation. Thank you for your understanding.
 
-### Why does the Lock Screen card turn off after 8 hours?
+### Why does the Live Activity turn off after 8 hours?
 
-The Lock Screen card is a Live Activity. iOS allows a Live Activity to run for up to 8 hours and then ends it automatically. This is an iOS limit, not a setting in Workout Timer.
+iOS allows a Live Activity to run for up to 8 hours and then ends it automatically. This is an iOS limit, not a setting in Workout Timer.
 
-When you tap a button on the card and the card has been on for more than 1 hour, Workout Timer replaces it with a fresh card, which restarts the 8-hour limit. If the card does turn off, open Workout Timer to turn it back on.
+When you tap a button on the Live Activity and it has been on for more than 1 hour, Workout Timer replaces it with a fresh one, which restarts the 8-hour limit. If the Live Activity does turn off, open Workout Timer to turn it back on.
 
 ### How do I change ad tracking or consent settings?
 
@@ -56,7 +56,7 @@ For more about the data involved, see the [Workout Timer Privacy Policy](/workou
 **Workout Timer Plus** is a one-time purchase. To buy it, tap **Settings** (top-left of the main screen) → **Upgrade to Plus**.
 
 - **Save multiple timers in a list**: Without Plus, each timer type has one timer. With Plus, tap **+** to save up to 30 for each type, tap one to open it, and swipe left to delete it.
-- **Control timers from the Lock Screen**: Play, pause, and add rounds from the Lock Screen and the Dynamic Island.
+- **Control timers with Live Activities**: Play, pause, and add rounds from the Live Activity and the Dynamic Island.
 - **Vibration and sound volume settings**: In **Settings**, turn on **Vibration** when each segment starts or ends, and adjust the **Sound Volume**. Sound volume also follows the device volume.
 - No ads.
 
